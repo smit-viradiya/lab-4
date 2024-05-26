@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square of a Number</title>
+</head>
+<body>
+    <h1>Square of a Number</h1>
+    <p>Enter a number and click the button to see its square:</p>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="calculateSquare()">Calculate Square</button>
+    <p>Output: The square of the number is <span id="output"></span></p>
+
+    <script>
+        function calculateSquare() {
+            const num = document.getElementById('numberInput').value;
+            const square = num * num;
+            document.getElementById('output').textContent = square;
+        }
+    </script>
+</body>
+</html>
+
